@@ -1,19 +1,60 @@
 import './App.css';
-import Header from './component/Header.js'
-import CardComponent from './component/CardComponent.js'
-import 'mdb-react-ui-kit/dist/css/mdb.min.css'
-import Footer from './component/Footer.js'
+import Header from './component/Header.js';
+import CardComponent from './component/CardComponent.js';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import Footer from './component/Footer.js';
 
 function App() {
+  const cardList = [
+    {
+      id: 1,
+      title: 'card1',
+      text: 'adfadsfae',
+    },
+    {
+      id: 2,
+      title: 'card2',
+      text: 'adfadsfae',
+    },
+    {
+      id: 3,
+      title: 'card3',
+      text: 'adfadsfae',
+    },
+    {
+      id: 4,
+      title: 'card4',
+      text: 'adfadsfae',
+    },
+    {
+      id: 5,
+      title: 'card5',
+      text: 'adfadsfae',
+    },
+    {
+      id: 6,
+      title: 'card6',
+      text: 'adfadsfae',
+    },
+    {
+      id: 7,
+      title: 'card7',
+      text: 'adfadsfae',
+    },
+    {
+      id: 8,
+      title: 'card8',
+      text: 'adfadsfae',
+    },
+  ];
+
   return (
-    <div className="App row">
-     <Header></Header> 
-      { Array(8).fill(null).map(() => { 
-          return ( 
-            <CardComponent></CardComponent>
-          )
-        })}
-       <Footer></Footer>
+    <div className='App row'>
+      <Header />
+      {cardList.map((card) => {
+        return <CardComponent card={card} />;
+      })}
+      <Footer />
     </div>
   );
 }
