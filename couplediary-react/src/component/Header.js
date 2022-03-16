@@ -1,12 +1,16 @@
 import React from 'react';
+import './Header.css'
 import { Navbar,Container,Nav,NavDropdown } from 'react-bootstrap';
+
 
 export default class Header extends React.Component{
     render(){
         return (
-            <Navbar bg="light" expand="lg">
-                <Container>
-                <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                <Navbar class="Navbar"  bg="light" expand="lg">
+                <Container style={{
+                
+                }}>
+                <Navbar.Brand className='top_navbar__brand' id="navbar-brand" href="#home">CoupleDiary</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
