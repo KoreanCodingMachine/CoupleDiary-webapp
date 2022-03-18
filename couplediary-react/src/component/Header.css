@@ -1,0 +1,103 @@
+.menu-sidebar {
+  background-color: yellow !important ;
+  margin-right: 2% !important;
+}
+
+.header-container {
+  justify-content: flex-start !important;
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.profile-image {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.header-center-icon {
+  background-color: green;
+  width: 100%;
+  min-width: 15px;
+}
+
+.header-center-box {
+  display: flex;
+  width: 150px;
+  max-width: 300px;
+  margin: 0 auto;
+  transform: translateX(-50%);
+}
+
+.offcanvas-center-box {
+  display: flex;
+  width: 150px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.offcanvas-name {
+  text-align: center;
+  padding: 10px;
+}
+
+.offcanvas-name1 {
+  margin-right: 35px;
+}
+
+.offcanvas-name2 {
+  margin-left: 30px;
+}
+
+.offcanvas-met-date {
+  text-align: center;
+  font-size: 25px;
+  font-family: bold;
+}
+
+.offcanvas-date {
+  text-align: center;
+}
+
+.offcanvas-body {
+  background-color: beige;
+}
+
+.empty {
+  margin-top: 50px;
+}
+
+.offcanvas-btn {
+  display: block !important;
+  margin-top: 1em !important;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.d-flex {
+  margin-top: 200px;
+}
+
+.offcanvas-btn-date {
+  display: block !important;
+  margin-top: 25em !important;
+  margin: 0 auto;
+  transform: translateX(-2%);
+  width: 95%;
+  position: absolute;
+  bottom: 0;
+}
+
+.offcanvas-option {
+  margin-top: 10em;
+  text-align: center;
+  padding: 10px;
+}
+
+.offcanvas-option1 {
+  margin-right: 35px;
+}
+
+.offcanvas-option2 {
+  margin-left: 30px;
+}
