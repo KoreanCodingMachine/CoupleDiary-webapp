@@ -1,6 +1,5 @@
 import React from 'react';
 import { Navbar, Container, Offcanvas, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import './Header.css';
 
 export default class Header extends React.Component {

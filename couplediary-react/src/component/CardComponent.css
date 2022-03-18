@@ -1,0 +1,11 @@
+.write-btn {
+  background-color: beige;
+  width: 75px !important;
+  position: fixed;
+  height: 75px;
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 50%;
+  bottom: 5em;
+  right: 3em;
+}

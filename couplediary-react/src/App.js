@@ -3,6 +3,7 @@ import Header from './component/Header.js';
 import CardComponent from './component/CardComponent.js';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import Footer from './component/Footer.js';
+import { CardButton } from './component/CardComponent';
 
 function App() {
   const cardList = [
@@ -62,6 +63,7 @@ function App() {
       {cardList.map((card) => {
         return <CardComponent card={card} />;
       })}
+      <CardButton />
       <Footer />
     </div>
   );
