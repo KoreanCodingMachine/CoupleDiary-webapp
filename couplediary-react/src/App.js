@@ -10,41 +10,49 @@ function App() {
       id: 1,
       title: 'card1',
       text: 'adfadsfae',
+      image: '../image/1.png',
     },
     {
       id: 2,
       title: 'card2',
       text: 'adfadsfae',
+      image: '../image/1.png',
     },
     {
       id: 3,
       title: 'card3',
       text: 'adfadsfae',
+      image: '../image/1.png',
     },
     {
       id: 4,
       title: 'card4',
       text: 'adfadsfae',
+      image: '../image/1.png',
     },
     {
       id: 5,
       title: 'card5',
       text: 'adfadsfae',
+      image: '../image/1.png',
     },
     {
       id: 6,
       title: 'card6',
       text: 'adfadsfae',
+      image: '../image/1.png',
     },
     {
       id: 7,
       title: 'card7',
       text: 'adfadsfae',
+      image: '../image/1.png',
     },
     {
       id: 8,
       title: 'card8',
       text: 'adfadsfae',
+      image: '../image/1.png',
     },
   ];
 
