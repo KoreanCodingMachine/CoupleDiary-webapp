@@ -4,6 +4,7 @@ import CardComponent from './component/CardComponent.js';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import Footer from './component/Footer.js';
 import { CardButton } from './component/CardComponent';
+import CardUpdate from './component/CardUpdate';
 
 function App() {
   const cardList = [
