@@ -1,0 +1,20 @@
+.form-password {
+  width: 60%;
+}
+.form-re-password {
+  width: 60%;
+}
+
+.signup-btn {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: inset -19px 19px 38px #bebebe, inset 19px -19px 38px #5f114e;
+  padding: 1.85em;
+  width: 25%;
+}
+
+.signup-container {
+  transform: translateY(50%);
+}
