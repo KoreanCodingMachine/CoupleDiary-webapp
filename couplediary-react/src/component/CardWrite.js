@@ -14,10 +14,7 @@ export default class CardUpdate extends React.Component {
             <Navbar.Toggle />
             <Navbar.Collapse className='justify-content-end'>
               <Link to='/'>
-                <Button className='cardupdate-modify'>수정하기</Button>
-              </Link>
-              <Link to='/'>
-                <Button className='cardupdate-delete'>삭제하기</Button>
+                <Button className='cardupdate-modify'>저장하기</Button>
               </Link>
             </Navbar.Collapse>
           </Container>

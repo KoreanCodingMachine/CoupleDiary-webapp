@@ -7,7 +7,7 @@ export default class CardComponent extends React.Component {
   render() {
     return (
       <>
-        <Card className='card' style={{ margin: '8px', width: '29rem' }}>
+        <Card className='card' style={{ margin: '8px', width: '25rem' }}>
           <Card.Img variant='top' src='../logo192.png' />
           {/* src = this.props.card.image */}
           <Card.Body>
