@@ -1,0 +1,44 @@
+.login-btn {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: inset -19px 19px 38px #bebebe, inset 19px -19px 38px #5f114e;
+  padding: 1.85em;
+  width: 15%;
+}
+
+.login-id {
+  display: block;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.login-pw {
+  display: block;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.login-container {
+  transform: translateY(50%);
+}
+
+.login__state-btn {
+  width: 15%;
+}
+
+.find {
+  display: flex;
+  position: relative;
+}
+
+.find-id {
+  text-decoration: none;
+}
+
+.login-state {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}

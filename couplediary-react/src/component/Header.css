@@ -26,7 +26,14 @@
   width: 150px;
   max-width: 300px;
   margin: 0 auto;
-  transform: translateX(-50%);
+  transform: translateX(10%);
+}
+
+div.navbar-btn {
+  display: flex;
+  width: 150px;
+  max-width: 300px;
+  background-color: brown;
 }
 
 .offcanvas-center-box {

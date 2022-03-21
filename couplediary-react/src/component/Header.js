@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Container, Offcanvas, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 export default class Header extends React.Component {
@@ -16,6 +17,13 @@ export default class Header extends React.Component {
             <div className='header-center-icon'></div>
             <img className='profile-image' src='../image/1.jpg' alt='' />
           </div>
+
+          <div className='navbar-btn'>
+            <Link to='/login'>로그인</Link>
+            <Link to='/logout'>로그아웃</Link>
+            <Link to='/signup'>회원가입</Link>
+          </div>
+
           <Navbar.Offcanvas
             id='offcanvasNavbar'
             aria-labelledby='offcanvasNavbarLabel'

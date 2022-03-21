@@ -1,8 +1,8 @@
 .write-btn {
   background-color: beige;
-  width: 75px !important;
+  width: 150px !important;
   position: fixed;
-  height: 75px;
+  height: 150px;
   border: 1px solid gray;
   padding: 5px;
   border-radius: 50%;
