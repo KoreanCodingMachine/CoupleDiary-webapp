@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Container, Offcanvas, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { AiOutlineMenu, AiFillHeart } from 'react-icons/ai';
+import { AiOutlineMenu, AiFillHeart, AiFillSetting } from 'react-icons/ai';
 import './Header.css';
 
 export default class Header extends React.Component {
@@ -26,6 +26,7 @@ export default class Header extends React.Component {
           </div>
 
           <Navbar.Offcanvas
+            className='navbar-offcanvas-main'
             id='offcanvasNavbar'
             aria-labelledby='offcanvasNavbarLabel'
             placement='start'
@@ -59,10 +60,9 @@ export default class Header extends React.Component {
                 +
               </Button>
               <div className='offcanvas-option'>
-                <span className='offcanvas-option1'>icon</span>
+                <AiFillSetting className='offcanvas-setting-icon' />
                 <span className='offcanvas-option2'>설정하기</span>
               </div>
-
               <Button className='offcanvas-btn-date' variant='outline-success'>
                 ^
               </Button>
@@ -70,20 +70,6 @@ export default class Header extends React.Component {
           </Navbar.Offcanvas>
         </Container>
       </Navbar>
-
-      // <Navbar class='Navbar' bg='light' expand='lg'>
-      //   <Container>
-      //     <Navbar.Brand
-      //       className='top_navbar__brand top-head'
-      //       id='navbar-brand'
-      //     >
-      //       Couplesex
-      //     </Navbar.Brand>
-      //     <Link to='/login'>로그인</Link>
-      //     <Link to='/logout'>로그아웃</Link>
-      //     <Link to='/signup'>회원가입</Link>
-      //   </Container>
-      // </Navbar>
     );
   }
 }
