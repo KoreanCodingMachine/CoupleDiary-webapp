@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { AiFillEdit } from 'react-icons/ai';
 import './CardComponent.css';
 
 export default class CardComponent extends React.Component {
@@ -26,6 +27,6 @@ export default class CardComponent extends React.Component {
 
 export class CardButton extends React.Component {
   render() {
-    return <div className='write-btn'></div>;
+    return <AiFillEdit className='write-btn' />;
   }
 }
