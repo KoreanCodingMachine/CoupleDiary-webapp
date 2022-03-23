@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Container, Offcanvas, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { AiOutlineMenu, AiFillHeart } from 'react-icons/ai';
 import './Header.css';
 
 export default class Header extends React.Component {
@@ -8,13 +9,13 @@ export default class Header extends React.Component {
     return (
       <Navbar sticky='top' bg='light' expand={false}>
         <Container fluid className='header-container'>
-          <Navbar.Toggle
-            className='menu-sidebar'
-            aria-controls='offcanvasNavbar'
-          />
+          <Navbar.Toggle>
+            <AiOutlineMenu className='header-menu-icon' />
+          </Navbar.Toggle>
+
           <div className='header-center-box'>
             <img className='profile-image' src='../image/1.jpg' alt='' />
-            <div className='header-center-icon'></div>
+            <AiFillHeart className='header-center-icon' />
             <img className='profile-image' src='../image/1.jpg' alt='' />
           </div>
 
@@ -36,7 +37,7 @@ export default class Header extends React.Component {
               <div className='offcanvas-profile'>
                 <div className='offcanvas-center-box'>
                   <img className='profile-image' src='../image/1.jpg' alt='' />
-                  <div className='header-center-icon'></div>
+                  <AiFillHeart className='header-center-icon' />
                   <img className='profile-image' src='../image/1.jpg' alt='' />
                 </div>
                 <div className='offcanvas-name'>
