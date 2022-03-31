@@ -24,7 +24,11 @@ function CardComponent(props) {
 }
 
 function CardButton() {
-  return <AiFillEdit className='write-btn' />;
+  return (
+    <Link to='CardWrite' style={{ textDecoration: 'inherit' }} className='a'>
+      <AiFillEdit className='write-btn' />;
+    </Link>
+  );
 }
 
 export { CardComponent, CardButton };
