@@ -9,3 +9,16 @@
   bottom: 5em;
   right: 3em;
 }
+
+.a:link {
+  color: pink;
+}
+.a:visited {
+  color: pink;
+}
+.a:hover {
+  color: white;
+}
+.a:active {
+  color: white;
+}
