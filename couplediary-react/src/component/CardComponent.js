@@ -4,29 +4,27 @@ import { Link } from 'react-router-dom';
 import { AiFillEdit } from 'react-icons/ai';
 import './CardComponent.css';
 
-export default class CardComponent extends React.Component {
-  render() {
-    return (
-      <>
-        <Card className='card' style={{ margin: '8px', width: '25rem' }}>
-          <Card.Img variant='top' src='../logo192.png' />
-          {/* src = this.props.card.image */}
-          <Card.Body>
-            <Card.Title>{this.props.card.title}</Card.Title>
-            <Card.Text>{this.props.card.text}</Card.Text>
+function CardComponent(props) {
+  return (
+    <>
+      <Card className='card' style={{ margin: '8px', width: '25rem' }}>
+        <Card.Img variant='top' src='../logo192.png' />
+        {/* src = this.props.card.image */}
+        <Card.Body>
+          <Card.Title>{props.card.title}</Card.Title>
+          <Card.Text>{props.card.text}</Card.Text>
 
-            <Link to='CardUpdate'>
-              <Button variant='primary'>카드 수정 하기</Button>
-            </Link>
-          </Card.Body>
-        </Card>
-      </>
-    );
-  }
+          <Link to='CardUpdate'>
+            <Button variant='primary'>카드 수정 하기</Button>
+          </Link>
+        </Card.Body>
+      </Card>
+    </>
+  );
 }
 
-export class CardButton extends React.Component {
-  render() {
-    return <AiFillEdit className='write-btn' />;
-  }
+function CardButton() {
+  return <AiFillEdit className='write-btn' />;
 }
+
+export { CardComponent, CardButton };
