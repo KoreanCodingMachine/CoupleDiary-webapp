@@ -7,7 +7,7 @@ import './CardComponent.css';
 function CardComponent(props) {
   return (
     <>
-      <Card className='card' style={{ margin: '8px', width: '25rem' }}>
+      <Card className='card col-lg-3'>
         <Card.Img variant='top' src='../logo192.png' />
         {/* src = this.props.card.image */}
         <Card.Body>

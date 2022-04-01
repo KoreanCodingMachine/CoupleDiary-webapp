@@ -1,6 +1,6 @@
 /*eslint-disable*/
 import './App.css';
-import Header from './component/Header.js';
+import { Header, BottomEvent } from './component/Header.js';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import Footer from './component/Footer.js';
 import { CardComponent, CardButton } from './component/CardComponent';
@@ -59,7 +59,9 @@ function App() {
 
   return (
     <div className='App row'>
-      <Header />
+      <Header>
+        <BottomEvent></BottomEvent>
+      </Header>
       {cardList.map((card) => {
         return <CardComponent card={card} />;
       })}
