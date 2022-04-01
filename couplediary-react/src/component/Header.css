@@ -70,12 +70,12 @@ div.navbar-btn {
 
 .offcanvas-body {
   background-color: beige;
-  max-height: max-content;
   overflow: hidden;
+  padding-bottom: 0px !important;
 }
 
 .empty {
-  margin-top: 50px;
+  margin-top: 35px;
 }
 
 .offcanvas-btn {
@@ -115,6 +115,14 @@ div.navbar-btn {
   height: 5em;
   justify-content: space-evenly;
   padding: 10px;
+}
+
+.bottom-box {
+  background-color: aqua;
+  width: 100%;
+  transform: translateX(-10%);
+  padding-left: 500px;
+  padding-bottom: 20px;
 }
 
 .offcanvas-option2 {

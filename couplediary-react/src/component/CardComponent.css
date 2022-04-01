@@ -1,13 +1,13 @@
 .write-btn {
   background-color: gray !important;
-  width: 150px !important;
+  width: 120px !important;
   position: fixed;
-  height: 150px;
+  height: 120px;
   border: 1px solid gray(124, 49, 49);
   padding: 5px;
   border-radius: 50% !important;
-  bottom: 5em;
-  right: 3em;
+  bottom: 0em;
+  right: 0em;
 }
 
 .a:link {
