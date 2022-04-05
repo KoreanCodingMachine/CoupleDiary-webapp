@@ -4,58 +4,18 @@ import { Header, BottomEvent } from './component/Header.js';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import Footer from './component/Footer.js';
 import { CardComponent, CardButton } from './component/CardComponent';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 function App() {
-  const cardList = [
-    {
-      id: 1,
-      title: 'card1',
-      text: 'adfadsfae',
-      image: '../image/1.png',
-    },
-    {
-      id: 2,
-      title: 'card2',
-      text: 'adfadsfae',
-      image: '../image/1.png',
-    },
-    {
-      id: 3,
-      title: 'card3',
-      text: 'adfadsfae',
-      image: '../image/1.png',
-    },
-    {
-      id: 4,
-      title: 'card4',
-      text: 'adfadsfae',
-      image: '../image/1.png',
-    },
-    {
-      id: 5,
-      title: 'card5',
-      text: 'adfadsfae',
-      image: '../image/1.png',
-    },
-    {
-      id: 6,
-      title: 'card6',
-      text: 'adfadsfae',
-      image: '../image/1.png',
-    },
-    {
-      id: 7,
-      title: 'card7',
-      text: 'adfadsfae',
-      image: '../image/1.png',
-    },
-    {
-      id: 8,
-      title: 'card8',
-      text: 'adfadsfae',
-      image: '../image/1.png',
-    },
-  ];
+  let [cardList, setCardList] = useState([]);
+
+  useEffect(() => {
+    axios.get('http://127.0.0.1:8000/card/').then((res) => {
+      console.log(res);
+      setCardList(res.data);
+    });
+  }, []);
 
   return (
     <div className='App row'>

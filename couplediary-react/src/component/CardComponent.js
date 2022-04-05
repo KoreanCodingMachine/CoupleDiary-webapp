@@ -14,7 +14,14 @@ function CardComponent(props) {
           <Card.Title>{props.card.title}</Card.Title>
           <Card.Text>{props.card.text}</Card.Text>
 
-          <Link to='CardUpdate'>
+          <Link
+            to={`CardUpdate/${props.card.id}`}
+            state={{
+              id: props.card.id,
+              title: props.card.title,
+              text: props.card.text,
+            }}
+          >
             <Button variant='primary'>카드 수정 하기</Button>
           </Link>
         </Card.Body>
