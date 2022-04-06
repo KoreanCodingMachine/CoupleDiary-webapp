@@ -1,10 +1,9 @@
 import React from 'react';
-import './CardUpdate.css';
 import { Navbar, Card, Form, Container, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './CardUpdate.css';
 import { useState } from 'react';
 import axios from 'axios';
+import './CardWrite.css';
 
 export default function CardWrite() {
   let [cardTitle, setCardTitle] = useState('');
@@ -20,10 +19,7 @@ export default function CardWrite() {
 
   const createCard = () => {
     axios
-      .post('http://127.0.0.1:8000/card/', {
-        title: cardTitle,
-        text: cardText,
-      })
+      .post('http://127.0.0.1:8000/card/', { title: cardTitle, text: cardText })
       .then((res) => {
         console.log(res);
       });
@@ -33,11 +29,13 @@ export default function CardWrite() {
     <Container>
       <Navbar>
         <Container>
-          <Navbar.Brand href='#home'>로고</Navbar.Brand>
+          <Navbar.Brand href='#home'>
+            <img className='logo' src='../image/2.png'></img>
+          </Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className='justify-content-end'>
             <Link to='/'>
-              <Button onClick={createCard} className='cardupdate-modify'>
+              <Button onClick={createCard} className='cardupdate-btn'>
                 저장하기
               </Button>
             </Link>
@@ -53,7 +51,7 @@ export default function CardWrite() {
           className='cardupdate-img'
           style={{ width: '30%', height: '30%' }}
           variant='top'
-          src='./logo512.png'
+          src='../image/3.png'
         />
         <Card.Body>
           <Form.Floating className='mt-3'>
