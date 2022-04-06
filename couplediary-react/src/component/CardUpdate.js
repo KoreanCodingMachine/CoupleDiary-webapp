@@ -1,19 +1,15 @@
 import React from 'react';
 import './CardUpdate.css';
 import { Navbar, Card, Form, Container, Button } from 'react-bootstrap';
-import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './CardUpdate.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 export default function CardUpdate() {
-  let history = useNavigate();
   let location = useLocation();
-  let slug = useParams();
 
-  // console.log(history);
-  // console.log(location);
-  // console.log(slug);
+  console.log(location);
 
   let [cardTitle, setCardTitle] = useState('');
   let [cardText, setCardText] = useState('');
@@ -57,12 +53,14 @@ export default function CardUpdate() {
     <Container>
       <Navbar>
         <Container>
-          <Navbar.Brand href='#home'>로고</Navbar.Brand>
+          <Navbar.Brand href='#home'>
+            <img className='logo' src='../image/2.png'></img>
+          </Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className='justify-content-end'>
             <Link to='/'>
               <Button onClick={updateCard} className='cardupdate-modify'>
-                수정하기
+                저장하기
               </Button>
             </Link>
             <Link to='/'>
@@ -82,7 +80,7 @@ export default function CardUpdate() {
           className='cardupdate-img'
           style={{ width: '30%', height: '30%' }}
           variant='top'
-          src='./logo512.png'
+          src='../image/3.png'
         />
         <Card.Body>
           <Form.Floating className='mt-3'>

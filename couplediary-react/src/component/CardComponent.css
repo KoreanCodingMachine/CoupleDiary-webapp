@@ -1,3 +1,6 @@
+* {
+  font-family: 'Nanum Myeongjo', serif;
+}
 .write-btn {
   background-color: gray !important;
   width: 120px !important;
@@ -6,19 +9,45 @@
   border: 1px solid gray(124, 49, 49);
   padding: 5px;
   border-radius: 50% !important;
-  bottom: 0em;
-  right: 0em;
+  bottom: 5em;
+  right: 1.2em;
 }
 
 .a:link {
-  color: pink;
+  color: white;
 }
 .a:visited {
-  color: pink;
+  color: white;
 }
 .a:hover {
-  color: white;
+  color: red;
 }
 .a:active {
-  color: white;
+  color: red;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 0;
+}
+
+.card-title {
+  display: flex;
+}
+
+.card-text {
+  display: flex;
+}
+
+.real-card {
+  background-color: gray;
+  padding: 0;
+  flex-basis: 24%;
+  margin: 10px auto;
+}
+
+.modify-btn {
+  border-radius: 50px;
+  background: #b02cba;
+  box-shadow: 20px 20px 60px #d5d5d5, -20px -20px 60px #ffffff;
 }

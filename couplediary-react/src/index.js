@@ -9,6 +9,8 @@ import Logout from './component/Logout';
 import SignUp from './component/SignUp';
 import CardUpdate from './component/CardUpdate';
 import CardWrite from './component/CardWrite';
+import Option from './component/Option';
+import Event from './component/Event';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,6 +21,8 @@ ReactDOM.render(
         <Route path='/logout' element={<Logout />} />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/cardWrite' element={<CardWrite />} />
+        <Route path='/option' element={<Option />} />
+        <Route path='/event' element={<Event />} />
         <Route path='/cardUpdate/:cardid' element={<CardUpdate />} />
       </Routes>
     </BrowserRouter>
