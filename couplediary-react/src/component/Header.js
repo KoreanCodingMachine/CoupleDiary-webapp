@@ -11,7 +11,6 @@ import './Header.css';
 
 export default function Header() {
   let [button, addButton] = useState([]);
-  let [bottomState, setBottomState] = useState(false);
 
   const add = () => {
     let newArray = [...button];
@@ -32,12 +31,23 @@ export default function Header() {
           <img className='profile-image' src='../image/1.jpg' alt='' />
         </div>
 
-        <div className='navbar-btn'>
-          <img className='logo-image' src='../image/2.png' />
+        <div className='to'>
+          <Link className='tologin' to='/login'>
+            로그인
+          </Link>
+          <Link className='tologout' to='/logout'>
+            로그아웃
+          </Link>
+          <Link className='tosignup' to='/signup'>
+            회원가입
+          </Link>
         </div>
-        {/* <Link to='/login'>로그인</Link>
-        <Link to='/logout'>로그아웃</Link>
-        <Link to='/signup'>회원가입</Link> */}
+
+        <div className='navbar-btn'>
+          <Link to='/'>
+            <img className='logo-image' src='../image/2.png' />
+          </Link>
+        </div>
 
         <Navbar.Offcanvas
           className='navbar-offcanvas-main'
@@ -71,18 +81,24 @@ export default function Header() {
             >
               <AiFillSnippets className='add-icon' />
             </Button>
-            <Button className='offcanvas-btn' variant='dark'>
-              1월
-            </Button>
-            <Button className='offcanvas-btn' variant='dark'>
-              2월
-            </Button>
+            <Link to='/'>
+              <Button className='offcanvas-btn' variant='dark'>
+                1월
+              </Button>
+            </Link>
+            <Link to='/'>
+              <Button className='offcanvas-btn' variant='dark'>
+                2월
+              </Button>
+            </Link>
             {button.map((a, i) => {
               if (i < 10) {
                 return (
-                  <Button className='offcanvas-btn' variant='dark' key={i}>
-                    {i + 3}월
-                  </Button>
+                  <Link to='/'>
+                    <Button className='offcanvas-btn' variant='dark' key={i}>
+                      {i + 3}월
+                    </Button>
+                  </Link>
                 );
               } else return null;
             })}

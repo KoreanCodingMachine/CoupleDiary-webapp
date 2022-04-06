@@ -29,9 +29,11 @@ export default function CardWrite() {
     <Container>
       <Navbar>
         <Container>
-          <Navbar.Brand href='#home'>
-            <img className='logo' src='../image/2.png'></img>
-          </Navbar.Brand>
+          <Link to='/'>
+            <Navbar.Brand>
+              <img className='logo' src='../image/2.png'></img>
+            </Navbar.Brand>
+          </Link>
           <Navbar.Toggle />
           <Navbar.Collapse className='justify-content-end'>
             <Link to='/'>

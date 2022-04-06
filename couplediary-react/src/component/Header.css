@@ -32,7 +32,7 @@
   width: 150px;
   max-width: 300px;
   margin: 0 auto;
-  transform: translateX(36%);
+  transform: translateX(100%);
 }
 
 div.navbar-btn {
@@ -167,4 +167,17 @@ div.navbar-btn {
 
 .logo-image {
   width: 100px;
+}
+
+.to {
+  width: 200px;
+  background-color: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tologin,
+.tologout,
+.tosignup {
+  color: black;
 }
