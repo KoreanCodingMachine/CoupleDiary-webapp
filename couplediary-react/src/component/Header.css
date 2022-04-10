@@ -90,6 +90,31 @@ div.navbar-btn {
   z-index: 2;
 }
 
+.input {
+  margin-top: 1em;
+  width: 50%;
+  height: 35px;
+  z-index: 2;
+  transform: translateX(35px);
+}
+.button {
+  width: 20%;
+  z-index: 2;
+ height: 35px;
+ 
+ transform: translateY(16px);
+
+}
+
+.buttonx {
+  width: 20%;
+  z-index: 2;
+  height: 35px;
+  transform: translateX(35px);
+  transform: translateY(16px);
+}
+
+
 .offcanvas-btn2 {
   position: relative;
   color: #fff;

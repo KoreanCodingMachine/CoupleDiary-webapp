@@ -10,12 +10,26 @@ import {
 import './Header.css';
 
 export default function Header() {
-  let [button, addButton] = useState([]);
+  let [monthList, setMonthList] = useState(['1', '2', '3']);
+  const [inputFlag, setInputFlag] = useState(false);
+  const [inputvalue, setInputValue] = useState('');
+  // const add = () => {
+  //   let newArray = [...button];
+  //   newArray.push('');
+  //   addButton(newArray);
+  // };
 
-  const add = () => {
-    let newArray = [...button];
-    newArray.push('');
-    addButton(newArray);
+  const setMonth = () => {
+    if (monthList.includes(inputvalue)) {
+      alert('이미 리스트에 있습니다.');
+      return;
+    }
+    const num = Number(inputvalue);
+    if (Number.isNaN(num)) {
+      alert('올바른 형식을 입력해 주세요');
+      return;
+    }
+    setMonthList((prevstate) => [...prevstate, inputvalue]);
   };
 
   return (
@@ -75,33 +89,44 @@ export default function Header() {
             <div className='empty'></div>
             <hr className='offcanvas-hr'></hr>
             <Button
-              onClick={add}
               className='offcanvas-btn2'
               variant='outline-success'
+              onClick={() => {
+                setInputFlag(true);
+              }}
             >
               <AiFillSnippets className='add-icon' />
             </Button>
-            <Link to='/'>
-              <Button className='offcanvas-btn' variant='dark'>
-                1월
-              </Button>
-            </Link>
-            <Link to='/'>
-              <Button className='offcanvas-btn' variant='dark'>
-                2월
-              </Button>
-            </Link>
-            {button.map((a, i) => {
-              if (i < 10) {
-                return (
-                  <Link to='/'>
-                    <Button className='offcanvas-btn' variant='dark' key={i}>
-                      {i + 3}월
-                    </Button>
-                  </Link>
-                );
-              } else return null;
+
+            {monthList.map((month) => {
+              return (
+                <Button className='offcanvas-btn' variang='outline-success'>
+                  {month}
+                </Button>
+              );
             })}
+
+            {inputFlag ? (
+              <div style={{ display: 'flex' }}>
+                <input
+                  className='input'
+                  type='text'
+                  onChange={(e) => setInputValue(e.target.value)}
+                ></input>
+                <button className='button' type='button' onClick={setMonth}>
+                  저장
+                </button>
+                <button
+                  className='buttonx'
+                  type='button'
+                  onClick={() => {
+                    setInputFlag(false);
+                  }}
+                >
+                  x
+                </button>
+              </div>
+            ) : null}
 
             <div className='offcanvas-option'>
               <AiFillSetting className='offcanvas-setting-icon' />
